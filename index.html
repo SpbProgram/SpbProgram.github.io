@@ -1,17 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aizen</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+   
 </head>
+
 <body>
-    <div id="content"></div>
-    <h1 >Welcome to my website.</h1>
-    <p >Click on king Aizen to be moved to my game.</p>
-    <a href="GetToSchool/index.html">
-        <img src="img/Aizen.jpeg" alt="">
-    </a>
+    <div id="content">
+        <div id="banner">
+            <h1>Home</h1>
+            <a href="index.html">Home |</a>
+            <a href="about.html">About Me</a> |
+            <a href="gameguide.html">Get To School |</a>
+            <a href="#" onclick="changeSheet()">Light/Dark</a>
+        </div>
+
+        <div id="blogposts">
+            <div class="post">
+                <h2>About Me</h2>
+                <p>Hello, name is Angel.  I am currently a freshman attending York Tech and am an all honors student.  I have a few things I like to do in my free time but to learn about them you will need to click below!  </p>
+                <p>Click <a href="about.html">here</a> to learn more.</p>
+            </div>
+            <div class="post">
+                <h2 style="display: block">Get To School</h2>
+                <img src="img/Gamescreen.png" alt="Gamescreen" class="Left">
+                <p>Get To School is a smash hit Indie success about getting to school... presumably.  Throughout my entire marking period three, I have 
+                    worked on my game, Get to School 5, and put as much effort as I could to make it a good game.  RPG Maker MZ was a really valueable 
+                    resource in my education on programming this year and allowed me to learn important things in programming such as Flow Charts and 
+                    conditional branches.  If you wish to learn more click <a href="gameguide.html">here</a>!</p>
+                <p>Click <a href="gettoschool/index.html">here</a> to play.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
 </body>
+
+<script>
+
+var lightMode = true;
+
+    function changeSheet() {
+        // make light mode = not light mode
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+        // if light mode turn of, display dark stylesheet
+        if (lightMode == false) {
+            console.log("Turning Dark Mode On");
+            darkSheet.media = "";
+            lightSheet.media = "none";
+        } else {
+            console.log("Turning Dark Mode Off");
+            darkSheet.media = "none";
+            lightSheet.media = "";
+        }
+    }
+
+
+
+
+</script>
+
+
 </html>

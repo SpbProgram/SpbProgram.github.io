@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aizen</title>
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+</head>
+<body>
+    <div id="content">
+        <div id="banner">
+            <h1>Game Guide</h1>
+            <a href="index.html">Home |</a>
+            <a href="about.html">About Me</a> |
+            <a href="gameguide.html">Get To School |</a>
+            <a href="#" onclick="changeSheet()">Light/Dark</a>
+
+        </div>
+        <div id="blogposts">
+            <div class="post">
+                <h2>Play My Game</h2>
+                <p>Click <a href="gettoschool/index.html">here</a> to play.</p>
+            </div>
+            <div class="post">
+                <h2>Get To School</h2>
+                <p>Get To School is a smash hit Indie success about getting to school... presumably.  While Playing Get to School you will have an unmatched experience when compared<br>
+                    to the feeble games known as Minecraft, Roblox, and even Fortnite.  This game is the definition of peak and fun with friends having a vast amount of content and <br>
+                    an unlimited amount of things to do.  A lot of work was put into this game in order to make it fun and enjoyable for the masses that play it and I hope that everyone enjoys
+                    the game as much as I do. </p>
+            </div>
+            <div class="post">
+                <h2>Gallery</h2>
+                <div class="gallery">
+                <a href="img/Screenshot1.png"><img src="img/Screenshot1.png" alt=""></a>
+                <a href="img/Screenshot2.png"><img src="img/Screenshot2.png" alt=""></a>
+                <a href="img/Screenshot3.png"><img src="img/Screenshot3.png" alt=""></a>
+                <a href="img/Screenshot4.png"><img src="img/Screenshot4.png" alt=""></a>
+                <a href="img/Screenshot5.png"><img src="img/Screenshot5.png" alt=""></a>
+                <a href="img/Screenshot6.png"><img src="img/Screenshot6.png" alt=""></a>
+                </div>
+            </div>
+            <div class="gameInfo">
+                <h2>Important Locations?</h2>
+                <a href="img/Market Stall.png"><img src="img/Market Stall.png" alt=""></a>
+                <h3>Market Stall</h3>
+                <p>The market Stall NPC is very important in Get to School since she allows you to buy fruit such as apples or carrots.  You are able to find her once you enter the boulder pass.</p>
+                <h3>Banker</h3>
+                <a href="img/Banker.png"><img src="img/Banker.png" alt=""></a>
+                <p>The banker NPC is very useful and convenient in Get to Schol 5 since he allows you to store your gold and access it at a future time preventing you from losing it.  You can find him inside of the starting house.</p>
+                <h3>More Coming Soon...</h3>
+            </div>
+        </div>
+
+    <div>
+</body>
+
+<script>
+
+    var lightMode = true;
+    
+        function changeSheet() {
+            // make light mode = not light mode
+            lightMode = !lightMode;
+            var lightSheet = document.getElementById("lightSheet");
+            var darkSheet = document.getElementById("darkSheet");
+            // if light mode turn of, display dark stylesheet
+            if (lightMode == false) {
+                console.log("Turning Dark Mode On");
+                darkSheet.media = "";
+                lightSheet.media = "none";
+            } else {
+                console.log("Turning Dark Mode Off");
+                darkSheet.media = "none";
+                lightSheet.media = "";
+            }
+        }
+    
+    
+    
+    
+    </script>
+
+</html>

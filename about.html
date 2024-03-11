@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aizen</title>
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+</head>
+<body>
+    <div id="content">
+        <div id="banner">
+            <h1>About Me</h1>
+            <a href="index.html">Home |</a>
+            <a href="about.html">About Me</a> |
+            <a href="gameguide.html">Get To School |</a>
+            <a href="#" onclick="changeSheet()">Light/Dark</a>
+
+        </div>
+        
+        <div id="blogposts">
+            <div class="post">
+                <h2>About Me</h2>
+                <p>Like stated on my Home page, I am a Honors student at York Tech and have a few things I do in my free time that I enjoy.  One of the things I enjoy the most is watching 
+                    anime.  Some that I have watched are: Jujutsu Kaisen, Bleach, Demon Slayer, and Dragon Ball.  I have watched many more but that is just a few that are currently 
+                    relevant.  I also often play games like Garrys mod or Fortnite with my friends to pass time when I'm not doing homework.  My family also comes from the Dominican Republic
+                    and has lived in America for almost 30 years.  Growing in a Hispanic family, I was able to learn spanish and I am bilingual. </p>
+
+                <h2>Why I attended York Tech</h2>
+                <p>Growing up in New York, I was surround by a lot of technology, in fact one of my favorite things to do as a kid was play on my Wii.  This constant environment of 
+                    technology led me to become facinated in the topic of computers and how they work.  As I continuted to grow, this facination of technology only grew along with me.
+                    When I found out about York Tech, I was intrigued about the programs and when I found out about their IT branch I knew I had to apply and try my hardest to get accepted 
+                    into the school. </p>
+            </div>
+        </div>
+        </div>
+
+    <div>
+</body>
+
+<script>
+
+    var lightMode = true;
+    
+        function changeSheet() {
+            // make light mode = not light mode
+            lightMode = !lightMode;
+            var lightSheet = document.getElementById("lightSheet");
+            var darkSheet = document.getElementById("darkSheet");
+            // if light mode turn of, display dark stylesheet
+            if (lightMode == false) {
+                console.log("Turning Dark Mode On");
+                darkSheet.media = "";
+                lightSheet.media = "none";
+            } else {
+                console.log("Turning Dark Mode Off");
+                darkSheet.media = "none";
+                lightSheet.media = "";
+            }
+        }
+    
+    
+    
+    
+    </script>
+
+
+
+</html>
