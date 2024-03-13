@@ -2,54 +2,103 @@ body {
     font-family: 'Times New Roman', Times, serif;
     background-color: lightgray;
     color: black;
-    margin: 0;
-    padding: 0;
-
 }
 
 #content {
-    width: 60%;
+    width: 80%;
     margin: auto;
-    border: 1px solid gray;
+    border: 5px dashed black;
+    border-radius: 25px;
+    margin-top: 50px;
+    padding: 20px;
+    
 }
 
 #banner {
     background-color: lightgray;
     text-align: center;
-    border: 1px solid gray;
     margin: 10px;
 }
 
 #blogposts {
     margin: 10px;
-    border: 1px solid gray;
+    border: 1px solid black;
     background-color: lightgray;
+    border-radius: 30px;
 }
 
 .post {
     margin: 10px;
     padding: 10px;
-    border: 1px solid gray;
+    border: 1px solid black;
     background-color: lightgray;
+    border-radius: 25px;
 }
 
 .post .Left {
-    float: left;
-    margin-right: 10px;
-    flex-wrap: wrap;
+    margin: auto;
 }
 
 .post img {
-    width: 200px;
-}
+    width: 400px;
+ }
+
+
+ .aboutImg {
+    border: black solid 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 8px;
+ }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border-radius: 8px;
 }
+
+.gallery img {
+    border-radius: 8px;
+}
+
+ .gameInfo {
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 16px;
+ }
 
  .gameInfo img {
     width: 300px ;
     border: 2px solid black;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
 }
+
+ .gameInfo h3 {
+    margin-left: 10px;
+ }
+
+.post h2 {
+    text-align: center;
+}
+
+.post p {
+    text-align: center;
+}
+
+#content a:hover {
+    color: white;
+}
+
+#content a {
+    color: black;
+    transition: color 500ms ease-in;
+}
+
+.gameInfo h1 {
+    text-align: center;
+}
+

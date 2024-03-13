@@ -2,58 +2,81 @@ body {
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
     color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 0;
-
 }
 
 #content {
-    width: 60%;
+    width: 80%;
     margin: auto;
-    border: 1px solid gray;
+    border: 5px dashed white;
+    border-radius: 25px;
+    margin-top: 50px;
+    padding: 20px;
 }
 
+
 #banner {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     text-align: center;
-    border: 1px solid gray;
     margin: 10px;
 }
 
 #blogposts {
     margin: 10px;
-    border: 1px solid gray;
-    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 30px;
 }
 
 .post {
     margin: 10px;
     padding: 10px;
-    border: 1px solid gray;
-    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 25px;
 }
 
 .post .Left {
-    float: left;
-    margin-right: 10px;
+    margin: auto;
 }
 
 .post img {
-    width: 200px;
+    width: 400px;
 }
+
+.aboutImg {
+    border: white solid 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 8px;
+ }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border-radius: 8px;
 }
 
-a {
+.gallery img {
+    border-radius: 8px;
+}
+
+.post h2 {
+    text-align: center;
+}
+
+.post p {
+    text-align: center;
+}
+
+#content a:hover {
+    color: black;
+}
+
+#content a {
     color: white;
-}
-
-a:hover {
-    color: rgb(8, 8, 8);
+    transition: color 500ms ease-in;
 }
 
 .gameInfo img {
